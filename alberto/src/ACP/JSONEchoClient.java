@@ -1,7 +1,7 @@
 package ACP;
 
-//import org.quickconnectfamily.json.JSONInputStream;
-//import org.quickconnectfamily.json.JSONOutputStream;
+import org.quickconnectfamily.json.JSONInputStream;
+import org.quickconnectfamily.json.JSONOutputStream;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -26,7 +26,7 @@ public class JSONEchoClient {
                 connection.setDoOutput(true);//allows POST
                 JSONOutputStream outToServer = new JSONOutputStream(connection.getOutputStream());
 
-                HashMap<String, Object> request = new HashMap<>();
+                HashMap<String, Object> request = new HashMap<String, Object>();
                 request.put("command", "Speak");
                 request.put("message", messageForServer);
 
