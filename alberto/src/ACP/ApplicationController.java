@@ -7,9 +7,8 @@ public class ApplicationController {
 
     // Method which receives a String and a HashMap with a String and a Object
     public void handleRequest(String command, HashMap<String,Object> data){
-        // Since Handler is an interface you cannot instantiate it
-        // Rather you store the handlerMap HashMap's Key of type String
-        // to the Handler
+        // Since Handler is an interface you cannot instantiate it. Instead, you store the handlerMap HashMap's
+        // Key of type String to the Handler.
         Handler aCommandHandler = handlerMap.get(command);
 
         if (aCommandHandler != null){
