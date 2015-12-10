@@ -11,10 +11,9 @@ public class ApplicationController {
         // Rather you store the handlerMap HashMap's Key of type String
         // to the Handler
         Handler aCommandHandler = handlerMap.get(command);
-        // If whatever was returned is not null, because its possible
-        // Then get Handler's method which parameter is a HashMap
-        // and pass the object to it.
+
         if (aCommandHandler != null){
+            // Problem: I'm not sure why this isn't able to complete the request. Everything looks good to me.
             aCommandHandler.handleIt(data);
         }
     }
@@ -22,6 +21,13 @@ public class ApplicationController {
     public void mapCommand(String aCommand, Handler acHandler){
 
         // Add to the handler HashMap the string and the Handler
-        handlerMap.put(aCommand,acHandler);
+        // I'm putting this in a try/catch block, because if the .put command doesn't recognize the given command,
+        // I shouldn't do ANYTHING. Right?
+        try {
+            handlerMap.put(aCommand,acHandler);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,5 +1,4 @@
 package ACP;
-
 import org.quickconnectfamily.json.JSONInputStream;
 import org.quickconnectfamily.json.JSONOutputStream;
 
@@ -10,13 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
-
-
 @WebServlet(name = "JSONEchoService", urlPatterns = {"/json"})
 public class JSONEchoServlet extends HttpServlet {
     private ApplicationController theAppController = new ApplicationController();
 
     public void init(){
+        // Problem: These values (as opposed to the keys) hate me. It says they're the wrong type, or that I need to extend my Speak and StupidHandlers.
         theAppController.mapCommand("Speak", new SpeakHandler());
         theAppController.mapCommand("print", new StupidHandler());
     }

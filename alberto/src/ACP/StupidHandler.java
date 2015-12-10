@@ -6,25 +6,40 @@ import java.util.logging.LogRecord;
 /**
  * Created by rome on 11/30/2015.
  */
-public class StupidHandler extends java.util.logging.Handler implements Handler{
+//extends java.util.logging.Handler
+public class StupidHandler implements Handler{
 
     @Override
     public void handleIt(HashMap<String, Object> data) {
         System.out.println(data);
     }
 
-    @Override
-    public void publish(LogRecord record) {
+    // These were also suggested after including the "extends java.util.logging.Handler" stuff in the class description.
+//    public void publish(LogRecord record) {
+//
+//    }
+//
+//    public void flush() {
+//
+//    }
+//
+//    public void close() throws SecurityException {
+//
+//    }
 
-    }
-
-    @Override
-    public void flush() {
-
-    }
-
-    @Override
-    public void close() throws SecurityException {
-
-    }
+    // I don't think these are required, but it suggested them after including the "extends java.util.logging.Handler" stuff in the class description.
+//    @Override
+//    public void publish(LogRecord record) {
+//
+//    }
+//
+//    @Override
+//    public void flush() {
+//
+//    }
+//
+//    @Override
+//    public void close() throws SecurityException {
+//
+//    }
 }

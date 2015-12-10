@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.logging.LogRecord;
 
 // A type of handler that uses the same method signature as the interface Handler
-public class SpeakHandler extends java.util.logging.Handler implements Handler {
+// extends java.util.logging.Handler
+public class SpeakHandler implements Handler {
     @Override
     public void handleIt(HashMap<String, Object> dataMap) {
         try{
@@ -20,18 +21,18 @@ public class SpeakHandler extends java.util.logging.Handler implements Handler {
         }
     }
 
-    @Override
-    public void publish(LogRecord record) {
-
-    }
-
-    @Override
-    public void flush() {
-
-    }
-
-    @Override
-    public void close() throws SecurityException {
-
-    }
+//    @Override
+//    public void publish(LogRecord record) {
+//
+//    }
+//
+//    @Override
+//    public void flush() {
+//
+//    }
+//
+//    @Override
+//    public void close() throws SecurityException {
+//
+//    }
 }
