@@ -1,4 +1,4 @@
-package com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.Dog;
+package DOGACP.Dog;
 
 /**
  * Created by rome on 12/1/2015.

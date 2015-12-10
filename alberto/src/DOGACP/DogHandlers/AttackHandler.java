@@ -1,6 +1,6 @@
-package com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.DogHandlers;
+package DOGACP.DogHandlers;
 
-import com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.Dog.Dog;
+import DOGACP.Dog.Dog;
 
 /**
  * Created by rome on 12/1/2015.

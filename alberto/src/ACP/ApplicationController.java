@@ -1,12 +1,9 @@
-package ApplicationControllerSandbox;
-
+package ACP;
+import java.util.logging.Handler;
 import java.util.HashMap;
-
 public class ApplicationController {
     // Private Instance Variable Which key is a String and Value is a Handler Interface
     private HashMap<String,Handler> handlerMap = new HashMap();
-
-
 
     // Method which receives a String and a HashMap with a String and a Object
     public void handleRequest(String command, HashMap<String,Object> data){
@@ -21,7 +18,6 @@ public class ApplicationController {
             aCommandHandler.handleIt(data);
         }
     }
-
 
     public void mapCommand(String aCommand, Handler acHandler){
 

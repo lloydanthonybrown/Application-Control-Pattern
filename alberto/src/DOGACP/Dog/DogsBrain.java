@@ -1,5 +1,6 @@
-package com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.Dog;
+package DOGACP.Dog;
 
+import DOGACP.DogHandlers.*;
 import com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.DogHandlers.*;
 
 import java.util.HashMap;

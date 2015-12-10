@@ -1,7 +1,7 @@
-package com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.DogExecuteACP;
+package DOGACP.DogExecuteACP;
 
-import com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.Dog.Dog;
-import com.alberto.arellano.ApplicationControllPatternSandbox.DogApplicationControllPattern.Dog.DogsBrain;
+import DOGACP.Dog.Dog;
+import DOGACP.Dog.DogsBrain;
 
 import java.util.HashMap;
 import java.util.Scanner;
