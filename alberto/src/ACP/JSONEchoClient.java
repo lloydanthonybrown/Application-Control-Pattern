@@ -19,7 +19,7 @@ public class JSONEchoClient {
                 System.out.printf("Enter the message to send to the server.\n");
                 String messageForServer = systemInScanner.nextLine();
 
-                URL url = new URL("http://localhost:7070/json");
+                URL url = new URL("http://localhost:8080/json");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setDoOutput(true);//allows POST
                 JSONOutputStream outToServer = new JSONOutputStream(connection.getOutputStream());

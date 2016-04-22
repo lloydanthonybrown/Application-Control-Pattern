@@ -10,7 +10,7 @@ public class ApplicationController {
         // Since Handler is an interface you cannot instantiate it. Instead, you store the handlerMap HashMap's
         // Key of type String to the Handler.
         Handler aCommandHandler = handlerMap.get(command);
-
+System.out.println(data.toString());
         if (aCommandHandler != null){
             // Problem: I'm not sure why this isn't able to complete the request. Everything looks good to me.
             aCommandHandler.handleIt(data);
